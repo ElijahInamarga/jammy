@@ -1,25 +1,22 @@
-import { useState } from "react";
+import Tracklist from "../Tracklist/Tracklist";
 
-export default function PlayList({ playlist, deleteSong }) {
-    const [playlistTitle, setPlaylistTitle] = useState('');
-
-    function handleChange(e) {
-        setPlaylistTitle(e.target.value);
-    }
-
+export default function Playlist(props) {
     return (
         <>
             <br />
             <input 
                 type="text"
-                value={playlistTitle}
-                onChange={handleChange}
+                onChange={props.onChangePlaylistName}
+                placeholder="Playlist name"
+                value={props.playlistName}
             />
-            {playlist.map((element, i) => 
-            <>
-                <h3>{element}</h3>
-                <button onClick={()=> deleteSong(i)}>-</button>
-            </>)}
+            <Tracklist 
+                searchResults={props.playlistTracks}
+                inPlaylist={true}
+                removeFromPlaylist={props.removeFromPlaylist}
+            />
+            <br />
+            <button onClick={props.savePlaylist}>Save To Spotify</button>
         </>
     );
 }
