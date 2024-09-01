@@ -3,7 +3,7 @@ export default function Track(props) {
         <>
             {props.songName != '' ? 
             <>
-                <h2>Song: {props.songName}</h2> 
+                <h3>Song: {props.songName}</h3> 
                 <button onClick={props.addToPlaylist}>+</button>
             </> : ''}
         </>

@@ -14,6 +14,10 @@ export default function App() {
         setSearchVal('');
     }
 
+    function deleteSong(indexToDelete) {
+        setPlaylist(playlist.filter((_, i) => i !== indexToDelete));
+    }
+
     return (
         <>
             <Search 
@@ -28,6 +32,7 @@ export default function App() {
             />
             <Playlist 
                 playlist={playlist}
+                deleteSong={deleteSong}
             />
         </>
     );

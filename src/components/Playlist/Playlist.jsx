@@ -1,10 +1,13 @@
-export default function PlayList({ playlist }) {
+export default function PlayList({ playlist, deleteSong }) {
     return (
         <>
             <h2>Playlist</h2>
-            <ul>
-                {playlist.map(element => <li>{element}</li>)}
-            </ul>
+            
+            {playlist.map((element, i) => 
+            <>
+                <h3>{element}</h3>
+                <button onClick={()=> deleteSong(i)}>-</button>
+            </>)}
         </>
     );
 }
