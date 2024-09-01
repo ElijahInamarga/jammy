@@ -6,11 +6,11 @@ import Results from '../Results/Results.jsx';
 
 export default function App() {
     const [searchVal, setSearchVal] = useState('');
-    const [results, setResults] = useState([]);
+    const [songName, setSongName] = useState([]);
     const [playlist, setPlaylist] = useState([]);
 
     function handleSubmit() {
-        setResults(searchVal);
+        setSongName(searchVal);
         setSearchVal('');
     }
 
@@ -22,9 +22,13 @@ export default function App() {
                 handleSubmit={handleSubmit}
             />
             <Results 
-                results={results}
+                songName={songName}
+                playlist={playlist}
+                setPlaylist={setPlaylist}
             />
-            <Playlist />
+            <Playlist 
+                playlist={playlist}
+            />
         </>
     );
 }
