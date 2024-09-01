@@ -5,8 +5,8 @@ export default function Search({ searchVal, setSearchVal, handleSubmit }) {
                 type='text' 
                 value={searchVal} 
                 onChange={e => setSearchVal(e.target.value)} 
-                placeholder='Enter a song title...'>
-            </input>
+                placeholder='Enter a song title...'
+            />
             <button onClick={handleSubmit}>Search</button>
         </>
     );
