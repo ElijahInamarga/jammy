@@ -42,3 +42,11 @@
 .buttonAdd:hover {
     background-color: #24bb59;
 }
+
+.buttonDel:active{
+    background-color: #8d1832;
+}
+
+.buttonAdd:active {
+    background-color: #146b33;
+}

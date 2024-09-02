@@ -35,3 +35,7 @@
 .buttonWrapper button:hover{
     background-color: #146b33;
 }
+
+.buttonWrapper button:active{
+    border: solid 2px black;
+}

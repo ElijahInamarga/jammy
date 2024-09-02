@@ -41,6 +41,8 @@ export default function App() {
         if(playlistName !== '') {
             setPlaylistName('');
             setPlaylistTracks([]);
+        } else {
+            alert('Input a playlist name');
         }
     }
 
