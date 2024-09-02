@@ -1,5 +1,5 @@
 const CLIENT_ID = '964bfd13ba484db480e2450b92c6365a';
-const redirectUrl = "http://localhost:3000";
+const redirectUrl = "https://elijahinamargajammy.surge.sh";
 let accessToken = "";
 
 
