@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5em;
+    border-radius: 0.7em;
 }
 
-.button {
+.buttonDel, .buttonAdd {
     height: 2em;
     width: 2em;
     margin: 1em;
@@ -12,18 +13,32 @@
     border-radius: 1em;
     font-weight: 900;
     margin: 1em;
+    background-color: #9d9d9d;
+    visibility: hidden;
 }
 
 .tracks {
     padding-top: 0.6em;
     max-width: 20em;
+    color: #f2f2f2;
 }
 
 .wrapper:hover {
-    background-color: white;
+    background-color: #232323;
 }
 
-.button:hover {
-    background-color: rgba(0, 0, 0, 0.726);
-    color: white;
+.wrapper:hover .buttonDel {
+    visibility: visible;
+}
+
+.wrapper:hover .buttonAdd {
+    visibility: visible;
+}
+
+.buttonDel:hover {
+    background-color: #ed1d30;
+}
+
+.buttonAdd:hover {
+    background-color: #24bb59;
 }

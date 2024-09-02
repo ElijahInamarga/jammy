@@ -3,9 +3,9 @@ import styles from './Track.module.css';
 export default function Track(props) {
     function renderAddOrDel() {
         if(props.inPlaylist) {
-            return <button className={styles.button} onClick={() => props.removeFromPlaylist(props.track)}>-</button>
+            return <button className={styles.buttonDel} onClick={() => props.removeFromPlaylist(props.track)}>-</button>
         } else {
-            return <button className={styles.button} onClick={() => props.addToPlaylist(props.track)}>+</button>
+            return <button className={styles.buttonAdd} onClick={() => props.addToPlaylist(props.track)}>+</button>
         }
     }
 

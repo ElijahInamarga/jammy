@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'logo font';
+    src: url(../../../public/fonts/Gotham-Bold.otf);
+}
+
+button {
+    border-style: none;
+}
+
+button:active {
+    color: white;
+}
+
 .wrapper {
     text-align: center;
     display: flexbox;
@@ -5,18 +18,44 @@
 
 .wrapper2 {
     display: flex;
+    min-height: 46.5vh;
+    margin-bottom: 1em;
 }
 
 .results {
     width: 50%;
     text-align: left;
-    background-color: lightblue;
+    background-color: #1a1a1a;
     padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+h1 {
+    font-size: 7em;
+    color: #24bb59;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    font-family: 'logo font';
+}
+
+h2 {
+    color: #9d9d9d;
+    padding: 0.8em;
+    padding-left: 0.3em;
 }
 
 .playlist {
     width: 50%;
     text-align: left;
-    background-color: lightgreen;
+    background-color: #1a1a1a;
     padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+.searchWrapper {
+    background-color: #1a1a1a;
+    border-radius: 1em;
+    margin: 0.5em;
 }

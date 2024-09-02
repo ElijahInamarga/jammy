@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'search font';
+    src: url(../../../public/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: 'save button font';
+    src: url(../../../public/fonts/Gotham-Bold.otf);
+}
+
+.input {
+    color: #9d9d9d;
+    border-style: none; 
+    background: transparent; 
+    outline: none;
+    padding: 0.8em;
+    padding-left: 0.3em;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+    font-family: 'search font';
+}
+
+.buttonWrapper {
+    margin: 5em;
+    text-align: center;
+}
+
+.buttonWrapper button{
+    background-color: #24bb59;
+    padding: 1.3em;
+    border-radius: 2em;
+    font-family: 'save button font';
+}
+
+.buttonWrapper button:hover{
+    background-color: #146b33;
+}

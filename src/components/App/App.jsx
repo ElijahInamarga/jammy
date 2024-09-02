@@ -38,16 +38,22 @@ export default function App() {
     function savePlaylist() {
         // Passes playlist name and array of URIs
         Spotify.savePlaylist(playlistName, playlistTracks.map(arg => arg.uri));
-        setPlaylistName('');
-        setPlaylistTracks([]);
+        if(playlistName !== '') {
+            setPlaylistName('');
+            setPlaylistTracks([]);
+        }
     }
 
 
     return (
         <div className={styles.wrapper}>  
-            <SearchBar className={styles.search} search={search}/>
+            <div className={styles.searchWrapper}>
+                <h1>Jammy</h1>
+                <SearchBar className={styles.search} search={search}/>
+            </div>
             <div className={styles.wrapper2}>
                 <div className={styles.results}>
+                    <h2>Tracks</h2>
                     <SearchResults 
                         searchResults={searchResults}
                         addToPlaylist={addToPlaylist}

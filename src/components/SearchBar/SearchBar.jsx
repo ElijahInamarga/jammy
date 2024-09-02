@@ -17,12 +17,13 @@ export default function SearchBar(props) {
         <>
             <input 
                 type="text"
-                placeholder="Enter a song..."
+                placeholder="Enter a song"
                 value={input}
                 onChange={handleChange}
                 className={styles.search}
             />
-            <button onClick={searchInput}>Search</button>
+
+            <button className={styles.searchButton}onClick={searchInput}>►</button>
         </>
     );
 }

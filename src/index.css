@@ -1,15 +1,21 @@
+@font-face {
+    font-family: 'Spotify font';
+    src: url('../public/fonts/GothamBook.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Spotify font';
 }
 
 body {
-    background-color: gray;
+    background-color: black;
     display: flex;
 }
 
 #display {
-    border: solid black;
     width: 80em;
     margin: 0 auto;
+    margin-top: 1em;
 }

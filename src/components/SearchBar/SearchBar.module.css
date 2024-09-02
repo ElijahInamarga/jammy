@@ -1,4 +1,27 @@
+@font-face {
+    font-family: 'search font';
+    src: url(../../../public/fonts/Gotham-Light.otf);
+}
+
 .search {
-    margin-top: 15em;
-    margin-bottom: 8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #f2f2f2;
+    border-style: none; 
+    background: transparent; 
+    outline: none;
+    font-size:3em;
+    font-family: 'search font';
+    width: 8em;
+}
+
+.searchButton {
+    background: transparent;
+    border-style: none;
+    font-size: 4em;
+    color: #9d9d9d;
+}
+
+.searchButton:hover {
+    color: #f2f2f2;
 }
