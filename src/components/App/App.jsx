@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import SearchResults from '../SearchResults/SearchResults.jsx';
 import Playlist from '../Playlist/Playlist.jsx';
 import SearchBar from '../SearchBar/SearchBar.jsx';
+import { Spotify } from '../../util/Spotify.js';
 
 export default function App() {
     const [searchResults, setSearchResults] = useState([]);
     const [playlistTracks, setPlaylistTracks] = useState([]);  
-    const [playlistName, setPlaylistName] = useState();
+    const [playlistName, setPlaylistName] = useState('');
 
     // SearchResult function
     function addToPlaylist(track) {
-        // If track does not exist then add to playlist
+        // If track does not exist
         if(!playlistTracks.find(arg => arg.id === track.id)) {
             setPlaylistTracks(prev => [...prev, track]);
         }
@@ -18,7 +19,10 @@ export default function App() {
 
     // Search functions
     function search(arg) {
-
+        // Ignores empty searches
+        if(arg) {
+            Spotify.search(arg).then(result => setSearchResults(result));
+        }
     }
 
     // Playlist functions
@@ -31,7 +35,10 @@ export default function App() {
     }
 
     function savePlaylist() {
-        const playlistTrackURIs = playlistTracks.map(arg => arg.uri);
+        // Passes playlist name and array of URIs
+        Spotify.savePlaylist(playlistName, playlistTracks.map(arg => arg.uri));
+        setPlaylistName('');
+        setPlaylistTracks([]);
     }
 
 
