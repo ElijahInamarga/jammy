@@ -1,21 +1,21 @@
+import styles from './Track.module.css';
+
 export default function Track(props) {
     function renderAddOrDel() {
         if(props.inPlaylist) {
-            return <button onClick={() => props.removeFromPlaylist(props.track)}>-</button>
+            return <button className={styles.button} onClick={() => props.removeFromPlaylist(props.track)}>-</button>
         } else {
-            return <button onClick={() => props.addToPlaylist(props.track)}>+</button>
+            return <button className={styles.button} onClick={() => props.addToPlaylist(props.track)}>+</button>
         }
     }
 
-    function passTrack() {
-        props.addToPlaylist(props.track);
-    }
-
     return ( 
-        <>
-            <h3>{props.track.name}</h3>
-            <p>{props.track.artist} | {props.track.album}</p>
+        <div className={styles.wrapper}>  
+            <div className={styles.tracks}>
+                <h3>{props.track.name}</h3>
+                <p>{props.track.artist} | {props.track.album}</p>
+            </div>
             {renderAddOrDel()}
-        </>
+        </div>
     );
 }

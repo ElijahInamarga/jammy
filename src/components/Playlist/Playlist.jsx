@@ -10,13 +10,13 @@ export default function Playlist(props) {
                 placeholder="Playlist name"
                 value={props.playlistName}
             />
+            <button onClick={props.savePlaylist}>Save To Spotify</button>
             <Tracklist 
                 searchResults={props.playlistTracks}
                 inPlaylist={true}
                 removeFromPlaylist={props.removeFromPlaylist}
             />
             <br />
-            <button onClick={props.savePlaylist}>Save To Spotify</button>
         </>
     );
 }

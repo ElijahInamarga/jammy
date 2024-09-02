@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.button {
+    height: 2em;
+    width: 2em;
+    margin: 1em;
+    font-size: 1em;
+    border-radius: 1em;
+    font-weight: 900;
+    margin: 1em;
+}
+
+.tracks {
+    padding-top: 0.6em;
+    max-width: 20em;
+}
+
+.wrapper:hover {
+    background-color: white;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+}

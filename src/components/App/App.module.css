@@ -1,0 +1,22 @@
+.wrapper {
+    text-align: center;
+    display: flexbox;
+}
+
+.wrapper2 {
+    display: flex;
+}
+
+.results {
+    width: 50%;
+    text-align: left;
+    background-color: lightblue;
+    padding: 1em;
+}
+
+.playlist {
+    width: 50%;
+    text-align: left;
+    background-color: lightgreen;
+    padding: 1em;
+}

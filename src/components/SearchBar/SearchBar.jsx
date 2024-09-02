@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './SearchBar.module.css';
 
 export default function SearchBar(props) {
     const [input, setInput] = useState('');
@@ -19,6 +20,7 @@ export default function SearchBar(props) {
                 placeholder="Enter a song..."
                 value={input}
                 onChange={handleChange}
+                className={styles.search}
             />
             <button onClick={searchInput}>Search</button>
         </>
