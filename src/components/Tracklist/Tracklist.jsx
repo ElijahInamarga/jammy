@@ -5,6 +5,7 @@ export default function Tracklist(props) {
         <>
             {props.searchResults.map(track =>   
             <Track 
+                image={track.image}
                 track={track} 
                 key={track.id}
                 addToPlaylist={props.addToPlaylist}
