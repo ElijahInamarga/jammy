@@ -17,6 +17,15 @@
     visibility: hidden;
 }
 
+.text {
+    font-size: 1.1em;
+    overflow: scroll;
+}
+
+.text::-webkit-scrollbar {
+    display: none; 
+}
+
 .tracks {
     padding-top: 0.6em;
     color: #f2f2f2;

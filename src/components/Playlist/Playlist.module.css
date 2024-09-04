@@ -27,9 +27,12 @@
 
 .buttonWrapper button{
     background-color: #24bb59;
-    padding: 1.3em;
-    border-radius: 2em;
+    padding: 0.5em;
+    border-radius: 3em;
     font-family: 'save button font';
+    font-size: 1.5em;
+    height: 3em;
+    width: 10em;
 }
 
 .buttonWrapper button:hover{
