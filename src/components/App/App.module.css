@@ -27,18 +27,11 @@ button {
     margin: 0.5em;
 }
 
-h1 {
-    font-size: 7em;
-    color: #24bb59;
-    padding: 1em;
-    padding-bottom: 0.5em;
-    font-family: 'logo font';
-}
-
-h2 {
+.tracksheader {
     color: #9d9d9d;
-    padding: 0.8em;
+    padding: 1em;
     padding-left: 0.3em;
+    font-size: 1.6em;
 }
 
 .playlist {
@@ -54,4 +47,12 @@ h2 {
     background-color: #1a1a1a;
     border-radius: 1em;
     margin: 0.5em;
+}
+
+.searchWrapper h1 {
+    font-size: 7em;
+    color: #24bb59;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    font-family: 'logo font';
 }

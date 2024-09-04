@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Spotify font';
+    src: url('../../../public/fonts/GothamBook.ttf');
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -18,8 +23,9 @@
 }
 
 .text {
-    font-size: 1.1em;
+    font-size: 1.4em;
     overflow: scroll;
+    font-family: 'Spotify font';
 }
 
 .text::-webkit-scrollbar {

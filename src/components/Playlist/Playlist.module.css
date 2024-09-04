@@ -13,11 +13,12 @@
     border-style: none; 
     background: transparent; 
     outline: none;
-    padding: 0.8em;
+    padding: 1em;
     padding-left: 0.3em;
     font-size: 1.5em;
     margin-bottom: 0.1em;
     font-family: 'search font';
+    padding-bottom: 1.07em;
 }
 
 .buttonWrapper {
