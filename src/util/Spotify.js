@@ -1,5 +1,5 @@
 const CLIENT_ID = '964bfd13ba484db480e2450b92c6365a';
-const redirectUrl = "https://elijahinamargajammy.surge.sh";
+const redirectUrl = "https://elijahinamargajammy.netlify.app";
 let accessToken = "";
 
 
