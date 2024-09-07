@@ -12,7 +12,7 @@ export default function Track(props) {
     return ( 
         <div className={styles.wrapper}>  
             <div className={styles.tracks}>
-                <img src={props.image}/>
+                <img src={props.image} alt={"Image of " + props.track.album}/>
                 <div className={styles.text}>
                     <h3>{props.track.name}</h3>
                     <p>{props.track.artist} | {props.track.album}</p>
