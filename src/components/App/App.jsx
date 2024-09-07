@@ -55,7 +55,7 @@ export default function App() {
             </div>
             <div className={styles.wrapper2}>
                 <div className={styles.results}>
-                    <h2 className={styles.tracksheader}>Tracks</h2>
+                    <h2 className={styles.header}>Tracks</h2>
                     <SearchResults 
                         searchResults={searchResults}
                         addToPlaylist={addToPlaylist}

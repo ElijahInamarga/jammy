@@ -3,6 +3,11 @@
     src: url(../../../public/fonts/Gotham-Bold.otf);
 }
 
+@font-face {
+    font-family: 'Spotify font';
+    src: url('../../../public/fonts/GothamBook.ttf');
+}
+
 button {
     border-style: none;
 }
@@ -27,11 +32,12 @@ button {
     margin: 0.5em;
 }
 
-.tracksheader {
+.header {
     color: #9d9d9d;
     padding: 1em;
     padding-left: 0.3em;
     font-size: 1.6em;
+    font-family: 'Spotify font';
 }
 
 .playlist {
