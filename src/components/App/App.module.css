@@ -23,6 +23,10 @@ button {
     margin-bottom: 1em;
 }
 
+.wrapper2::-webkit-scrollbar {
+    display: none; 
+}
+
 .results {
     width: 50%;
     text-align: left;
